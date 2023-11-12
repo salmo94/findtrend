@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+  basic_nginx:
+    image: nginx:latest
+    container_name: b_nginx
+    ports:
+      - "4444:80"
+    volumes:
+      - .:/var/www/basic:rw
+      - ./docker/nginx/basic_nginx.conf:/etc/nginx/conf.d/basic_nginx.conf
+
+
+  basic_php:
+    container_name: b_php
+    build:
+      context: docker/php
+    ports:
+      - "5555:9000"
+    working_dir: /var/www/basic
+    volumes:
+      - .:/var/www/basic:rw

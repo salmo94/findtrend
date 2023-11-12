@@ -1,0 +1,202 @@
+
+@font-face {
+    font-family: 'Effra';
+    src: url(../fonts/Effra_Std_Bd.eot);
+    src: url(../fonts/Effra_Std_Bd.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Effra_Std_Bd.otf) format('otf'),
+    url(../fonts/Effra_Std_Bd.svg#Effra_Std_Bd) format('svg'),
+    url(../fonts/Effra_Std_Bd.ttf) format('truetype'),
+    url(../fonts/Effra_Std_Bd.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Effra';
+    src: url(../fonts/Effra_Std_He.eot);
+    src: url(../fonts/Effra_Std_He.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Effra_Std_He.otf) format('otf'),
+    url(../fonts/Effra_Std_He.svg#Effra_Std_He) format('svg'),
+    url(../fonts/Effra_Std_He.ttf) format('truetype'),
+    url(../fonts/Effra_Std_He.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Effra';
+    src: url(../fonts/Effra_Std_Md.eot);
+    src: url(../fonts/Effra_Std_Md.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Effra_Std_Md.otf) format('otf'),
+    url(../fonts/Effra_Std_Md.svg#Effra_Std_Md) format('svg'),
+    url(../fonts/Effra_Std_Md.ttf) format('truetype'),
+    url(../fonts/Effra_Std_Md.woff2) format('woff2');
+}
+
+body {
+    background-color: #000000;
+    background-image: url("../images/Ornament.svg");
+
+}
+main > .container {
+
+    padding: 70px 15px 20px;
+}
+
+@media (min-width: 1280px) {
+    .rotate-block  {
+        width: 900px;
+    }
+    .navbar {
+        margin-top: 25px;
+        background-color: inherit !important; /* Спадкуємо колір фону від body */
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-items {
+        color: #FFF;
+        margin-left: 40px;
+        margin-right: 30px;
+    }
+}
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+.navbar-brand {
+    margin-left: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.nav-items{
+    color: #FFF;
+    margin-right: 40px;
+    text-align: center;
+    font-family: Effra;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+#register-button {
+    height: 42px;
+    width: 129px;
+    display: inline-flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #FFF;
+}
+
+/*
+///////////////////
+ */
+
+.text-center {
+    margin-top: 10%;
+
+}
+.title h1 {
+    color: #FFF;
+    justify-content: center;
+    text-align: center;
+    font-family: Effra;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 112%;
+}
+
+.subtitile {
+    color: #8B8B8B;
+    margin-top: 24px;
+    text-align: center;
+    font-family: Effra;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#get-started {
+    margin-top: 2%;
+    margin-left: 5%;
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #A8FF35;
+    color: #000;
+    text-align: center;
+    font-family: Effra;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+#rotated-items-content {
+    margin-top: 10%;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.rotated-element {
+    padding: 0 5% 0 5%;
+}
+
+.rotated-block {
+    height: 82px;
+    background-color: #181818;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: #FFF;
+    font-size: 18px;
+}
+
+.top-rotated-block {
+    text-align: center;
+    height: 82px;
+    width: 341.226px;
+    margin: 0 -4em -3em -4em;
+    transform: rotate(-4deg);
+    background: #181818;
+    box-shadow: 10px 10px 10px #000000;
+}
+.bottom-rotated-block {
+    text-align: center;
+    height: 82px;
+    width: 341.226px;
+    margin: 3em -4em 0 -4em;
+    transform: rotate(2deg);
+    background: #181818;
+    box-shadow: 10px 10px 10px #000000;
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    padding: 25px;
+    background: linear-gradient(270deg, #181818 53.65%, rgba(24, 24, 24, 0.80) 100%);
+}
+
+div.errorMsg {color: red}
+
+#submit-button {
+    border-radius: 40px;
+    background: white;
+    color: #000;
+}
+
+.modal-content {
+    font-family: Effra;
+    color: white;
+    background-color: #090a11;
+    box-shadow: 1px 1px 1px 6px #8e8e8e;
+}
